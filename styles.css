@@ -44,7 +44,7 @@ body{
     left: 0;
     right: 0;
     background-color: #84003299;
-    transform: scale(0);
+    transform: scaleY(0);
     transition: transform .4s;
     color: #fff;
     display: flex;
@@ -54,7 +54,7 @@ body{
 }
 
 .gallery__picture:hover::before{
-    transform: scale(1) rotate(360deg);
+    transform: scaleY(1);
 }
 
 .gallery__picture--g1{
