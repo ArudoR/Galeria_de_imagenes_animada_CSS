@@ -30,6 +30,28 @@ body{
     gap: .8em;
 }
 
+.gallery__picture{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery__picture::before{
+    content: "Hola mundo";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #84003299;
+    transform: scale(0);
+    transition: transform .4s;
+}
+
+.gallery__picture:hover::before{
+    transform: scale(1) rotate(360deg);
+}
+
 .gallery__picture--g1{
     grid-area: img1;
 }
